@@ -47,7 +47,7 @@ ohos_executable("mkfs.ntfs") {
     "../libntfs-3g:libntfs_3g",
   ]
   install_enable = true
-  subsystem_name = "storage_manager"
+  subsystem_name = "filemanagement"
   part_name = "storage_standard"
   install_images = ["system"]
 }
@@ -63,7 +63,7 @@ ohos_executable("fsck.ntfs") {
     "../libntfs-3g:libntfs_3g",
   ]
   install_enable = true
-  subsystem_name = "storage_manager"
+  subsystem_name = "filemanagement"
   part_name = "storage_standard"
   install_images = ["system"]
 }
@@ -78,7 +78,7 @@ ohos_executable("ntfsfix") {
     "../libntfs-3g:libntfs_3g",
   ]
   install_enable = true
-  subsystem_name = "storage_manager"
+  subsystem_name = "filemanagement"
   part_name = "storage_standard"
   install_images = ["system"]
 }
@@ -93,7 +93,7 @@ ohos_executable("mount.ntfs") {
     "../libntfs-3g:libntfs_3g",
   ]
   install_enable = true
-  subsystem_name = "storage_manager"
+  subsystem_name = "filemanagement"
   part_name = "storage_standard"
   install_images = ["system"]
 }
@@ -108,7 +108,7 @@ ohos_executable("ntfsresize") {
     "../libntfs-3g:libntfs_3g",
   ]
   install_enable = true
-  subsystem_name = "storage_manager"
+  subsystem_name = "filemanagement"
   part_name = "storage_standard"
   install_images = ["system"]
 }

@@ -17,15 +17,15 @@
 
 import("//build/ohos.gni")
 
-group("storage_standard") {
+group("filemanagement") {
   deps = [
-    "//third_party/e2fsprogs/ntfs-3g/libfuse-lite:libfuse_lite",
-    "//third_party/e2fsprogs/ntfs-3g/libntfs-3g:libntfs_3g",
-    "//third_party/e2fsprogs/ntfs-3g/ntfsprogs:mkfs.ntfs",
-    "//third_party/e2fsprogs/ntfs-3g/ntfsprogs:fsck.ntfs",
-    "//third_party/e2fsprogs/ntfs-3g/ntfsprogs:ntfsfix",
-    "//third_party/e2fsprogs/ntfs-3g/ntfsprogs:mount.ntfs",
-    "//third_party/e2fsprogs/ntfs-3g/ntfsprogs:ntfsresize",
+    "//third_party/ntfs-3g/libfuse-lite:libfuse_lite",
+    "//third_party/ntfs-3g/libntfs-3g:libntfs_3g",
+    "//third_party/ntfs-3g/ntfsprogs:mkfs.ntfs",
+    "//third_party/ntfs-3g/ntfsprogs:fsck.ntfs",
+    "//third_party/ntfs-3g/ntfsprogs:ntfsfix",
+    "//third_party/ntfs-3g/ntfsprogs:mount.ntfs",
+    "//third_party/ntfs-3g/ntfsprogs:ntfsresize",
   ]
 
 }

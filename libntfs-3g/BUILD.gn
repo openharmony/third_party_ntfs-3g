@@ -68,7 +68,7 @@ ohos_static_library("libntfs_3g") {
   ]
   configs = [ ":ntfs_default" ]
 
-  subsystem_name = "storage_manager"
+  subsystem_name = "filemanagement"
   part_name = "storage_standard"
 
 }
