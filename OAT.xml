@@ -22,53 +22,18 @@
         <licensefile>COPYING</licensefile>
         <policylist>
             <policy name="projectPolicy" desc="">
-                <policyitem type="filetype" name="!binary" path="COPYING.LIB" rule="must" group="defaultGroup" filefilter="binaryFileTypePolicyFilter" desc=""/>
-                <policyitem type="license" name="GPL-2.0+" path="*.*" rule="may" group="defaultGroup" desc="GPL-2.0+"/>
-                <policyitem type="license" name="GPLStyleLicense" path="*.*" rule="may" group="defaultGroup" desc="GPLStyleLicense"/>
-                <policyitem type="license" name="GPL-3.0+" path="*.*" rule="may" group="defaultGroup" desc="GPL-3.0+"/>
-                <policyitem type="license" name="GPL-2.0-or-later" path="*.*" rule="may" group="defaultGroup" desc="GPL-2.0-or-later"/>
-                <policyitem type="license" name="InvalidLicense" path=".*" rule="may" group="defaultGroup" filefilter="LGPL-2.0" desc=""/>
-                <policyitem type="license" name="LGPL-2.0" path=".*" rule="may" group="defaultGroup" filefilter="" desc=""/>
-                <policyitem type="license" name="Apache-2.0" path="*/BUILD.gn" rule="may" group="defaultGroup" filefilter="" desc=""/>
-                <policyitem type="copyright" name="Andreas Bombe" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Anton Altaparmakov" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Bernhard Kaindl" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Carmelo Kintana" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Cristian Klein" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Daniel Baumann" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="David Hudson" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Eric Biggers" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Erik Larsson" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Erik Sornes" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Giang Nguyen" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Hil Liao" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Holger Ohmacht" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="H. Peter Anvin" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Jean-Pierre Andre" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Linus Torvalds" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Lode Leroy" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Martin Bene" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Matthew J. Fanto" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Miklos Szeredi" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Red Hat, Inc." path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Remy Card" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Richard Russon" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Roman Hodek" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Szabolcs Szakacsits" path="/*.*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Tuxera Inc." path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Yura Pakhuchiy" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>
-                <policyitem type="copyright" name="Yuval Fledel" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/> 
-                <policyitem type="copyright" name="Jan Kratochvil" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/> 
-                <policyitem type="copyright" name="Alon Bar-Lev" path=".*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc=""/>   
+                <policyitem type="compatibility" name="GPLStyleLicense" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
+                <policyitem type="compatibility" name="LGPL-2.0" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
+                <policyitem type="compatibility" name="GPL-2.0+" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
+                <policyitem type="compatibility" name="GPL-2.0-or-later" path=".*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
+                <policyitem type="compatibility" name="GPL-3.0+" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
             </policy>
         </policylist>
         <filefilterlist>
             <filefilter name="defaultFilter" desc="Files not to check">
-                <filteritem type="filename" name="TODO.ntfsprogs" desc="TODO file,not to check"/>
-                <filteritem type="filename" name=".keep" desc=".keep file,not to check"/>
-                <filteritem type="filename" name="README|README.OpenSource|AUTHORS|ChangeLog|CREDITS|Makefile.am|realpath.*|attrdef.*|boot.h|ntfssecaudit.c|sd.*|autogen.sh" desc="NoLicenseHeader,files not to check"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
+                <filteritem type="filename" name="autogen.sh" desc="没有许可证"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Filters for copyright header policies">
             </filefilter>
@@ -79,11 +44,11 @@
             <filefilter name="readmeOpenSourcefileNamePolicyFilter" desc="Filters for README.OpenSource file policies">
             </filefilter>
             <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
-                <filteritem type="filename" name="COPYING.LIB" desc="许可证文件"/>
+                <filteritem type="filename" name="COPYING.LIB" desc="LGPL-2.0许可证文件"/>
             </filefilter>
         </filefilterlist>
         <licensematcherlist>
-            <licensematcher name="LGPL-2.0" desc="See the file COPYING.LIB.">
+            <licensematcher name="LGPL-2.0 License" desc="LGPL-2.0 License see the file COPYING.LIB.">
                 <licensetext name="
                 /*
                     FUSE: Filesystem in Userspace
