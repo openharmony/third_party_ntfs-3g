@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2021 Huawei Device Co., Ltd.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+    This is the configuration file template for OpenHarmony OSS Audit Tool, please copy it to your project root dir and modify it refer to OpenHarmony/tools_oat/README.
+
+-->
+
+<configuration>
+    <oatconfig>
+        <licensefile>COPYING</licensefile>
+        <policylist>
+            <policy name="projectPolicy" desc="">
+                <policyitem type="compatibility" name="GPLStyleLicense" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
+                <policyitem type="compatibility" name="LGPL-2.0" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
+                <policyitem type="compatibility" name="GPL-2.0+" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
+                <policyitem type="compatibility" name="GPL-2.0-or-later" path=".*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
+                <policyitem type="compatibility" name="GPL-3.0+" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
+            </policy>
+        </policylist>
+        <filefilterlist>
+            <filefilter name="defaultFilter" desc="Files not to check">
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
+                <filteritem type="filename" name="autogen.sh" desc="没有许可证"/>
+            </filefilter>
+            <filefilter name="copyrightPolicyFilter" desc="Filters for copyright header policies">
+            </filefilter>
+            <filefilter name="licenseFileNamePolicyFilter" desc="Filters for LICENSE file policies">
+            </filefilter>
+            <filefilter name="readmeFileNamePolicyFilter" desc="Filters for README file policies">
+            </filefilter>
+            <filefilter name="readmeOpenSourcefileNamePolicyFilter" desc="Filters for README.OpenSource file policies">
+            </filefilter>
+            <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
+                <filteritem type="filename" name="COPYING.LIB" desc="LGPL-2.0许可证文件"/>
+            </filefilter>
+        </filefilterlist>
+        <licensematcherlist>
+            <licensematcher name="LGPL-2.0 License" desc="LGPL-2.0 License see the file COPYING.LIB.">
+                <licensetext name="
+                /*
+                    FUSE: Filesystem in Userspace
+                    Copyright (C) 2001-2007  Miklos Szeredi &lt;miklos@szeredi.hu&gt;
+                
+                    This program can be distributed under the terms of the GNU LGPLv2.
+                    See the file COPYING.LIB
+                */
+				 " desc=""/>
+                <licensetext name="
+                /*
+                    FUSE: Filesystem in Userspace
+                    Copyright (C) 2001-2007  Miklos Szeredi &lt;miklos@szeredi.hu&gt;
+                
+                    This program can be distributed under the terms of the GNU GPL.
+                    See the file COPYING.
+                */
+				 " desc=""/>
+                 <licensetext name="
+                /*
+                    This file defines the kernel interface of FUSE
+                    Copyright (C) 2001-2007  Miklos Szeredi &lt;miklos@szeredi.hu&gt;
+                
+                    This program can be distributed under the terms of the GNU GPL.
+                    See the file COPYING.
+                
+                    This  and only this  header file may also be distributed under
+                    the terms of the BSD Licence as follows:
+                
+                    Copyright (C) 2001-2007 Miklos Szeredi. All rights reserved.
+                
+                    Redistribution and use in source and binary forms, with or without
+                    modification, are permitted provided that the following conditions
+                    are met:
+                    1. Redistributions of source code must retain the above copyright
+                       notice, this list of conditions and the following disclaimer.
+                    2. Redistributions in binary form must reproduce the above copyright
+                       notice, this list of conditions and the following disclaimer in the
+                       documentation and/or other materials provided with the distribution.
+                    
+                    THIS SOFTWARE IS PROVIDED BY AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+                    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+                    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+                    ARE DISCLAIMED.  IN NO EVENT SHALL AUTHOR OR CONTRIBUTORS BE LIABLE
+                    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+                    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+                    OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+                    HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+                    LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+                    OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+                    SUCH DAMAGE.
+                *
+                * 7.12
+                *  - add umask flag to input argument of open, mknod and mkdir
+                */
+				 " desc=""/>
+            </licensematcher>
+        </licensematcherlist>
+    </oatconfig>
+</configuration>
