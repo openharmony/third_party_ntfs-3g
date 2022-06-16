@@ -1,0 +1,11 @@
+[
+    {
+        "Name"                  : "ntfs-3g",
+        "License"               : "GPL-2.0-or-later",
+        "License File"          : "COPYING",
+        "Version Number"        : "2022.5.17",
+        "Owner"                 : "Jean-Pierre Andre, Alon Bar-Lev, Martin Bene, Dominique L Bouix, Csaba Henk, Bernhard Kaindl, Erik Larsson, Alejandro Pulver, Szabolcs Szakacsits, Miklos Szeredi",
+        "Upstream URL"          : "https://github.com/tuxera/ntfs-3g",
+        "Description"           : "The NTFS-3G driver is an open source, freely available read/write NTFS driver for Linux, FreeBSD, macOS, NetBSD, OpenIndiana, QNX and Haiku. It provides safe and fast handling of the Windows XP, Windows Server 2003, Windows 2000, Windows Vista, Windows Server 2008, Windows 7, Windows 8, Windows Server 2012, Windows Server 2016, Windows 10 and Windows Server 2019 NTFS file systems."
+    }
+]
