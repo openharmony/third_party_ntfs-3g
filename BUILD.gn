@@ -20,7 +20,6 @@ import("//build/ohos.gni")
 group("ntfsprogs") {
   deps = [
     "ntfsprogs:fsck.ntfs",
-    "ntfsprogs:mkfs.ntfs",
     "ntfsprogs:mount.ntfs",
   ]
 }
