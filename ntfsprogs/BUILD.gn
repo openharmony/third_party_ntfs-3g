@@ -112,3 +112,16 @@ ohos_executable("ntfsresize") {
   part_name = "storage_service"
   install_images = [ "system" ]
 }
+
+ohos_executable("ntfslabel") {
+  sources = [
+    "ntfslabel.c",
+    "utils.c",
+  ]
+  configs = [ ":ntfs_default" ]
+  deps = [ "../libntfs-3g:libntfs_3g" ]
+  install_enable = true
+  subsystem_name = "filemanagement"
+  part_name = "storage_service"
+  install_images = [ "system" ]
+}
