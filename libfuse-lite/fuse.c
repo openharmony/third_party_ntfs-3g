@@ -3083,6 +3083,7 @@ struct fuse *fuse_new(struct fuse_chan *ch, struct fuse_args *args,
     f->conf.entry_timeout = 1.0;
     f->conf.attr_timeout = 1.0;
     f->conf.negative_timeout = 0.0;
+    f->conf.hard_remove = 1;
     f->conf.intr_signal = FUSE_DEFAULT_INTR_SIGNAL;
 
     if (fuse_opt_parse(args, &f->conf, fuse_lib_opts, fuse_lib_opt_proc) == -1)
