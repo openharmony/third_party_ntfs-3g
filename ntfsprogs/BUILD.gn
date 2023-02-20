@@ -76,7 +76,10 @@ ohos_executable("mount.ntfs") {
   install_enable = true
   subsystem_name = "filemanagement"
   part_name = "storage_service"
-  install_images = [ "system", "updater"]
+  install_images = [
+    "system",
+    "updater",
+  ]
 }
 ohos_executable("ntfsresize") {
   sources = [
