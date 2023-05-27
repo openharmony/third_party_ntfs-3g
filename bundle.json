@@ -14,8 +14,8 @@
         "en": "README"
     },
     "component": {
-        "name": "thirdparty_ntfs_3g",
-        "subsystem": "",
+        "name": "ntfs_3g",
+        "subsystem": "thirdparty",
         "syscap": [],
         "features": [],
         "adapted_system_type": [],
