@@ -48,6 +48,6 @@ ohos_static_library("libfuse_lite") {
   ]
   configs = [ ":ntfs_default" ]
 
-  subsystem_name = "filemanagement"
-  part_name = "storage_service"
+  subsystem_name = "thirdparty"
+  part_name = "ntfs_3g"
 }

@@ -44,8 +44,8 @@ ohos_executable("fsck.ntfs") {
     "../libntfs-3g:libntfs_3g",
   ]
   install_enable = true
-  subsystem_name = "filemanagement"
-  part_name = "storage_service"
+  subsystem_name = "thirdparty"
+  part_name = "ntfs_3g"
   install_images = [ "system" ]
 }
 ohos_executable("ntfsfix") {
@@ -59,8 +59,8 @@ ohos_executable("ntfsfix") {
     "../libntfs-3g:libntfs_3g",
   ]
   install_enable = true
-  subsystem_name = "filemanagement"
-  part_name = "storage_service"
+  subsystem_name = "thirdparty"
+  part_name = "ntfs_3g"
   install_images = [ "system" ]
 }
 ohos_executable("mount.ntfs") {
@@ -74,8 +74,8 @@ ohos_executable("mount.ntfs") {
     "../libntfs-3g:libntfs_3g",
   ]
   install_enable = true
-  subsystem_name = "filemanagement"
-  part_name = "storage_service"
+  subsystem_name = "thirdparty"
+  part_name = "ntfs_3g"
   install_images = [
     "system",
     "updater",
@@ -92,8 +92,8 @@ ohos_executable("ntfsresize") {
     "../libntfs-3g:libntfs_3g",
   ]
   install_enable = true
-  subsystem_name = "filemanagement"
-  part_name = "storage_service"
+  subsystem_name = "thirdparty"
+  part_name = "ntfs_3g"
   install_images = [ "system" ]
 }
 
@@ -105,7 +105,7 @@ ohos_executable("ntfslabel") {
   configs = [ ":ntfs_default" ]
   deps = [ "../libntfs-3g:libntfs_3g" ]
   install_enable = true
-  subsystem_name = "filemanagement"
-  part_name = "storage_service"
+  subsystem_name = "thirdparty"
+  part_name = "ntfs_3g"
   install_images = [ "system" ]
 }
