@@ -45,7 +45,7 @@ ohos_executable("fsck.ntfs") {
   ]
   install_enable = true
   subsystem_name = "thirdparty"
-  part_name = "ntfs_3g"
+  part_name = "ntfs-3g"
   install_images = [ "system" ]
 }
 ohos_executable("ntfsfix") {
@@ -60,7 +60,7 @@ ohos_executable("ntfsfix") {
   ]
   install_enable = true
   subsystem_name = "thirdparty"
-  part_name = "ntfs_3g"
+  part_name = "ntfs-3g"
   install_images = [ "system" ]
 }
 ohos_executable("mount.ntfs") {
@@ -75,7 +75,7 @@ ohos_executable("mount.ntfs") {
   ]
   install_enable = true
   subsystem_name = "thirdparty"
-  part_name = "ntfs_3g"
+  part_name = "ntfs-3g"
   install_images = [
     "system",
     "updater",
@@ -93,7 +93,7 @@ ohos_executable("ntfsresize") {
   ]
   install_enable = true
   subsystem_name = "thirdparty"
-  part_name = "ntfs_3g"
+  part_name = "ntfs-3g"
   install_images = [ "system" ]
 }
 
@@ -106,6 +106,6 @@ ohos_executable("ntfslabel") {
   deps = [ "../libntfs-3g:libntfs_3g" ]
   install_enable = true
   subsystem_name = "thirdparty"
-  part_name = "ntfs_3g"
+  part_name = "ntfs-3g"
   install_images = [ "system" ]
 }

@@ -1,5 +1,5 @@
 {
-    "name": "@ohos/ntfs_3g",
+    "name": "@ohos/ntfs-3g",
     "description": "The NTFS-3G driver is an open source, freely available read/write NTFS driver for Linux, FreeBSD, macOS, NetBSD, OpenIndiana, QNX and Haiku. It provides safe and fast handling of the Windows XP, Windows Server 2003, Windows 2000, Windows Vista, Windows Server 2008, Windows 7, Windows 8, Windows Server 2012, Windows Server 2016, Windows 10 and Windows Server 2019 NTFS file systems.",
     "version": "3.1",
     "license": "GPL-2.0-or-later",
@@ -14,11 +14,13 @@
         "en": "README"
     },
     "component": {
-        "name": "ntfs_3g",
+        "name": "ntfs-3g",
         "subsystem": "thirdparty",
         "syscap": [],
         "features": [],
-        "adapted_system_type": [],
+        "adapted_system_type": [
+            "standard"
+        ],
         "rom": "",
         "ram": "",
         "deps": {

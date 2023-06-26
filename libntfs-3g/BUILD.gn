@@ -69,5 +69,5 @@ ohos_static_library("libntfs_3g") {
   configs = [ ":ntfs_default" ]
 
   subsystem_name = "thirdparty"
-  part_name = "ntfs_3g"
+  part_name = "ntfs-3g"
 }
