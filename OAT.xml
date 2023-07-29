@@ -26,7 +26,6 @@
                 <policyitem type="compatibility" name="LGPL-2.0" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
                 <policyitem type="compatibility" name="GPL-2.0+" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
                 <policyitem type="compatibility" name="GPL-2.0-or-later" path=".*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
-                <policyitem type="compatibility" name="GPL-3.0+" path="*.*" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="独立进程，独立使用"/>
             </policy>
         </policylist>
         <filefilterlist>
@@ -34,6 +33,7 @@
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
                 <filteritem type="filename" name="autogen.sh" desc="没有许可证"/>
+                <filteritem type="filename" name="ntfsprogs/boot.c" desc="没有许可证"/>
             </filefilter>
             <filefilter name="copyrightPolicyFilter" desc="Filters for copyright header policies">
             </filefilter>
