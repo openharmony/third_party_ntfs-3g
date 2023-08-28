@@ -30,6 +30,7 @@
         </policylist>
         <filefilterlist>
             <filefilter name="defaultFilter" desc="Files not to check">
+                <filteritem type="filepath" name="ntfsprogs/boot.c" desc="三方开源，且本文件未被使用，不需检测文件头是否不兼容"/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
                 <filteritem type="filename" name="autogen.sh" desc="没有许可证"/>
