@@ -29,7 +29,17 @@
         },
         "build": {
             "sub_component": [],
-            "inner_kits": [],
+            "inner_kits": [
+                {
+                    "name": "//third_party/ntfs-3g/ntfsprogs:fsck.ntfs"
+                },
+                {
+                    "name": "//third_party/ntfs-3g/ntfsprogs:mount.ntfs"
+                },
+                {
+                    "name": "//third_party/ntfs-3g/ntfsprogs:ntfslabel"
+                }
+            ],
             "test": []
         }
     }
