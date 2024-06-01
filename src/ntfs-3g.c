@@ -108,6 +108,7 @@
 #include "misc.h"
 #include "ioctl.h"
 #include "plugin.h"
+#include "malloc.h"
 
 #include "ntfs-3g_common.h"
 
@@ -4325,6 +4326,10 @@ static void setup_logging(char *parsed_options)
 
 int main(int argc, char *argv[])
 {
+        mallopt(M_OHOS_CONFIG, M_TCACHE_NORMAL_MODE);
+        mallopt(M_OHOS_CONFIG, M_ENABLE_OPT_TCACHE);
+        mallopt(M_SET_THREAD_CACHE, M_THREAD_CACHE_ENABLE);
+        mallopt(M_DELAYED_FREE, M_DELAYED_FREE_ENABLE);
 	char *parsed_options = NULL;
 	struct fuse *fh;
 #if !(defined(__sun) && defined (__SVR4))
