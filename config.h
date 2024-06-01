@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2021 Huawei Device Co., Ltd.
- * 
+ *
  * This program/include file is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as published
  * by the Free Software Foundation; either version 2 of the License, or
@@ -364,7 +364,7 @@
 #define PACKAGE_NAME "ntfs-3g"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "ntfs-3g 2021.8.30"
+#define PACKAGE_STRING "ntfs-3g 2022.10.30"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "ntfs-3g"
@@ -373,7 +373,7 @@
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "2021.8.30"
+#define PACKAGE_VERSION "2022.10.30"
 
 /* POSIX ACL support */
 /* #undef POSIXACLS */
@@ -404,7 +404,7 @@
 
 
 /* Version number of package */
-#define VERSION "2021.8.30"
+#define VERSION "2022.10.30"
 
 /* Define to 1 if this is a Windows OS */
 /* #undef WINDOWS */
