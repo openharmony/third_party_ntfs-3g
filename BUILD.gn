@@ -21,6 +21,7 @@ group("ntfsprogs") {
   deps = [
     "ntfsprogs:fsck.ntfs",
     "ntfsprogs:mount.ntfs",
+    "ntfsprogs:ntfsfix",
     "ntfsprogs:ntfslabel",
   ]
 }

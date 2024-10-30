@@ -37,6 +37,9 @@
                     "name": "//third_party/ntfs-3g/ntfsprogs:mount.ntfs"
                 },
                 {
+                    "name": "//third_party/ntfs-3g/ntfsprogs:ntfsfix"
+                },
+                {
                     "name": "//third_party/ntfs-3g/ntfsprogs:ntfslabel"
                 }
             ],
