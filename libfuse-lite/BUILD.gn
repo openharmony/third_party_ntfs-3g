@@ -46,6 +46,7 @@ ohos_static_library("libfuse_lite") {
     "mount.c",
     "mount_util.c",
   ]
+  branch_protector_ret = "pac_ret"
   configs = [ ":ntfs_default" ]
 
   subsystem_name = "thirdparty"
