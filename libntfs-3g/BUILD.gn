@@ -66,6 +66,7 @@ ohos_static_library("libntfs_3g") {
     "volume.c",
     "xattrs.c",
   ]
+  branch_protector_ret = "pac_ret"
   configs = [ ":ntfs_default" ]
 
   subsystem_name = "thirdparty"

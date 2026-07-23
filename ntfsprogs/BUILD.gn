@@ -38,6 +38,7 @@ ohos_executable("fsck.ntfs") {
     "ntfsck.c",
     "utils.c",
   ]
+  branch_protector_ret = "pac_ret"
   configs = [ ":ntfs_default" ]
   deps = [
     "../libfuse-lite:libfuse_lite",
@@ -53,6 +54,7 @@ ohos_executable("ntfsfix") {
     "ntfsfix.c",
     "utils.c",
   ]
+  branch_protector_ret = "pac_ret"
   configs = [ ":ntfs_default" ]
   deps = [
     "../libfuse-lite:libfuse_lite",
@@ -68,6 +70,7 @@ ohos_executable("mount.ntfs") {
     "../src/ntfs-3g.c",
     "../src/ntfs-3g_common.c",
   ]
+  branch_protector_ret = "pac_ret"
   configs = [ ":ntfs_default" ]
   deps = [
     "../libfuse-lite:libfuse_lite",
@@ -86,6 +89,7 @@ ohos_executable("ntfsresize") {
     "ntfsresize.c",
     "utils.c",
   ]
+  branch_protector_ret = "pac_ret"
   configs = [ ":ntfs_default" ]
   deps = [
     "../libfuse-lite:libfuse_lite",
@@ -102,6 +106,7 @@ ohos_executable("ntfslabel") {
     "ntfslabel.c",
     "utils.c",
   ]
+  branch_protector_ret = "pac_ret"
   configs = [ ":ntfs_default" ]
   deps = [ "../libntfs-3g:libntfs_3g" ]
   install_enable = true
